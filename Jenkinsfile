@@ -6,7 +6,7 @@ agent any
   stages{
     stage('Checkout'){
       steps{
-        git branch:'main',url:'
+        git branch:'main',url:'https://github.com/chinmayiii/simplemavenvedio.git'
       }
     }
     stage('Build'){
@@ -21,7 +21,7 @@ agent any
     }
     stage('Run Application'){
       steps{
-        sh 'java -jar target/
+        sh 'java -jar target/2023Simplemavenapp-1.0-SNAPSHOT.jar
       }
     }
   }
